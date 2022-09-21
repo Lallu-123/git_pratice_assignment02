@@ -1,8 +1,15 @@
 function prime(num){
 for(let i=1;i<=num;i++){
+factor=0
 if(num%i==0){
-return true;
+factor++
+
 }
+
+}
+if(factor==2){
+return true;
+}else{
 return false
 }
 }
